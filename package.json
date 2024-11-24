@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --port 3000",
+    "build": "vite build",
+    "emulator": "concurrently \"npm run start\" \"webxdc-dev run http://localhost:3000\"",
+    "fix": "prettier --write .",
+    "check": "prettier --check ."
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "prettier": "latest",
+    "vite": "latest",
+    "@webxdc/webxdc-dev": "latest",
+    "@webxdc/vite-plugins": "latest"
+  }
+}
